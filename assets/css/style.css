@@ -2,6 +2,8 @@
     --generalFontColor: #8BD9C7;
     --backgroundColorOne: #373737;
     --backgroundColorTwo: #59515E;
+    --hoverEffectShadow: inset 0 0 5px rgba(255, 255, 255, 0.075), 0 0 50px rgba(255, 255, 255, 0.6);
+    --languageCardBackground: linear-gradient(45deg, rgba(0,217,255,1) 21%, rgba(28,28,28,1) 87%);
 }
 
 * {
@@ -103,15 +105,18 @@ h1{
     flex:1;
     padding: 20px;
     margin-bottom: 20px;
-    height: 300px;
+    height: 350px;
     align-content: center;
     margin:50px
 }
 
 .presentProjectsChild:hover {
-    box-shadow: inset 
-    0 0 5px rgba(255, 255, 255, 0.075), 
-    0 0 50px rgba(255, 255, 255, 0.6);
+    box-shadow: var(--hoverEffectShadow)
+}
+
+.presentProjectsChild img{
+    width: 50px;
+    margin: 0 20px 0 0
 }
 
 /* Mainbody: PresentProjects-FirstChild */
@@ -136,5 +141,63 @@ h1{
 
 /* Mainbody: PresentProjects-SecondChild */
 .presentProjectsChild:nth-child(2) {
-    background-color: #06785f ;
+    background-color:seagreen ;
  }
+
+
+
+ /* Mainbody: Coding Languages */
+ .codingLanguages {
+    background-color: var(--backgroundColorOne);
+    text-align: center;
+    padding: 25px 0;
+}
+
+.codingLanguagesContainer {
+    display: flex;
+    margin: 40px auto 0 auto;
+    flex-wrap: wrap;
+    perspective: 1000px; /* CARD FORMAT */
+}
+
+.codeLangContChild{
+    flex:1;
+    position:relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    align-content: center;
+    margin:50px;
+    background: var(--languageCardBackground);
+    transition: transform 0.8s; /* CARD FORMAT */
+    transform-style: preserve-3d; /* CARD FORMAT */
+    position: relative; /* CARD FORMAT */
+}
+
+.codeLangContChild:active { /* CARD FORMAT */
+    transform: rotateY(180deg);
+}
+
+.codeLangContChild:hover{
+    box-shadow: var(--hoverEffectShadow)
+}
+
+.flip-card-front, .flip-card-back { /* CARD FORMAT */
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+.codeLangContChild img {
+    width: 180px
+}
+
+.flip-card-back { /*CARD FORMAT */
+    position:absolute; 
+    background: var(--languageCardBackground);
+    transform: rotateY(180deg);
+    top:0px;
+    right:0px;
+}
+
