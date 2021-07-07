@@ -28,7 +28,6 @@ header {
 header div {
     margin-right: 20px;
     float: right;
-    font-size: 20px;
 }
 
 header div ul {
@@ -56,6 +55,18 @@ h1{
     color: var(--generalFontColor)
 }
 
+@media screen and (min-width: 800px) {
+    header div {
+        font-size: 20px;  
+    }
+}
+
+@media screen and (max-width: 680px) {
+    header div {
+        font-size: 9px;  
+    }
+}
+
 
 /* Main body: About Me */
 
@@ -63,24 +74,22 @@ h1{
     background-color: var(--backgroundColorOne);
     display: flex;
     flex-wrap: wrap;
+    padding: 25px 0;
 }
 
-.figureDiv {
-    flex:1;
+.aboutMeContainer {
+    flex:2;
 }
 
-.figureDiv img {
-    border-radius: 50%;
-    width:300px;
-    margin: 80px 80px 80px 150px;
-}
-
-.myInfo{
-    flex:1;
-    flex-direction: column;
-    align-content: space-around;
+.myInfo {
     padding: 50px 0;
 }
+
+.aboutMeContainerImg img{
+    border-radius: 100%;
+    width:40%;
+}
+
 
 
 /* Main body: Present Projects */
