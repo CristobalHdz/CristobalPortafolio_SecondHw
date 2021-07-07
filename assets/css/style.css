@@ -1,5 +1,7 @@
 :root {
     --generalFontColor: #8BD9C7;
+    --backgroundColorOne: #373737;
+    --backgroundColorTwo: #59515E;
 }
 
 * {
@@ -7,7 +9,8 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    color: white
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -45,3 +48,93 @@ header div ul a:hover {
     color: #0076BE
 }
 
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--generalFontColor)
+}
+
+
+/* Main body: About Me */
+
+.aboutMe {
+    background-color: var(--backgroundColorOne);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.figureDiv {
+    flex:1;
+}
+
+.figureDiv img {
+    border-radius: 50%;
+    width:300px;
+    margin: 80px 80px 80px 150px;
+}
+
+.myInfo{
+    flex:1;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 50px 0;
+}
+
+
+/* Main body: Present Projects */
+
+.presentProjects {
+    background-color: var(--backgroundColorTwo);
+    text-align: center;
+    padding: 25px 0;
+}
+
+.presentProjectsContainer {
+    display: flex;
+    margin: 40px auto 0 auto;
+    flex-wrap: wrap;
+}
+
+.presentProjectsChild h1, h2, h4 {
+  text-align: left;
+}
+
+.presentProjectsChild {
+    flex:1;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    align-content: center;
+    margin:50px
+}
+
+.presentProjectsChild:hover {
+    box-shadow: inset 
+    0 0 5px rgba(255, 255, 255, 0.075), 
+    0 0 50px rgba(255, 255, 255, 0.6);
+}
+
+/* Mainbody: PresentProjects-FirstChild */
+.presentProjectsChild:nth-child(1) {
+   background-color: #08145c ;
+}
+
+.nexButton{
+    background-color: #dc731b;
+    width: 150px;
+    height:50px;
+    border-radius: 50px;
+    font-size: 18px;
+    margin: 30px 0 5px 0;
+}
+
+.nexButton:hover{
+    background-color:orangered;
+    cursor: pointer;
+}
+
+
+/* Mainbody: PresentProjects-SecondChild */
+.presentProjectsChild:nth-child(2) {
+    background-color: #06785f ;
+ }
