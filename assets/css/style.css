@@ -55,39 +55,82 @@ h1{
     color: var(--generalFontColor)
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1400px) {
     header div {
         font-size: 20px;  
     }
+    .aboutMeContChild button{ 
+        width:150px;  
+        margin-right: 100%;
+    }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1399px) {
+    header div {
+        font-size: 20px;  
+    }
+    .aboutMeContChild button{ 
+        width:150px;  
+        margin-right: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+.aboutMeContChild button{ 
+    width:200px;  
+    margin-right: 0%;
+}
+}
+
+@media screen and (max-width: 799px) {
     header div {
         font-size: 9px;  
     }
 }
 
 
-/* Main body: About Me */
 
+
+/* Main body: About Me */
 .aboutMe {
     background-color: var(--backgroundColorOne);
-    display: flex;
-    flex-wrap: wrap;
+    text-align: center;
     padding: 25px 0;
 }
 
 .aboutMeContainer {
-    flex:2;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto 0 auto;
+    height:auto;
 }
 
-.myInfo {
-    padding: 50px 0;
+.aboutMeContChild{  
+    flex:1; 
+    padding: 20px;
+    width: 350px;
+    align-content: center;
+    margin:20px;
+    text-align: center;
+    border:white 2px solid;
 }
 
-.aboutMeContainerImg img{
+.aboutMeContChild img{   
+    width:250px;
     border-radius: 100%;
-    width:40%;
+}
+
+.aboutMeContChild h2{   
+    text-align: center;
+}
+
+.aboutMeContChild button{   
+    background-color: transparent;
+    border:transparent
+}
+
+.aboutMeContChild button a, .aboutMeContChild button a img{   
+    width: inherit;
 }
 
 
@@ -155,6 +198,7 @@ h1{
 
 
 
+
  /* Mainbody: Coding Languages */
  .codingLanguages {
     background-color: var(--backgroundColorOne);
@@ -171,7 +215,7 @@ h1{
 
 .codeLangContChild{
     flex:1;
-    position:relative;
+    position:relative; /*CARD FORMAT */
     padding: 20px;
     margin-bottom: 20px;
     height: 300px;
