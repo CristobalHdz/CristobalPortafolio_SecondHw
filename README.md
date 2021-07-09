@@ -6,14 +6,14 @@
 Second code Boot Camp assignment.
 </br>
 </br>
-`Portafolio v1.0`
+`Porfolio v1.0`
 </br>
 </br>
  by Cristobal Hernandez
 
 # Section 02: General Information
 
-The assignment for this week is to make a code developer potafolio within our experience.
+The assignment for this week is to make a code developer portfolio within our experience.
 </br>
  With the use of HTML, Advanced CSS and Git the 
 
@@ -32,11 +32,11 @@ This section was the easiest to make. Only 2 cards with its information. I could
 This section is where I decided to make it as expectacular as possible. I wanted to try my best at it. The cards flip when you hover over them(PC) or press the card(mobile). I took inspiration from ideas and took the coding information from w3schools(referenced below).
 
 ## Contact Me
-This was a plain contact form, taken form w3schools, and applied to my portafolio. I could not come with a better way to format it so I just gave it some tweaks.
+This was a plain contact form, taken form w3schools, and applied to my porfolio. I could not come with a better way to format it so I just gave it some tweaks.
 
 
 # References
-`Main idea for the portafolio:`
+`Main idea for the porfolio:`
 https://www.pinterest.es/pin/502221795956721823/
 
 `Website to get HEX and RGB colors:`
