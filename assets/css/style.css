@@ -67,9 +67,15 @@ used on the Header and the first Section */
     header div {
         font-size: 20px;  
     }
+    .aboutMe{
+        margin-top:80px;  
+        }
     .aboutMeContChild button{ 
         width:150px;  
         margin-right: 100%;
+    }
+    .codeLangContChild:hover { /* Rotate Card Format */
+        transform: rotateY(180deg);
     }
 }
 
@@ -77,9 +83,15 @@ used on the Header and the first Section */
     header div {
         font-size: 20px;  
     }
+    .aboutMe{
+        margin-top:80px;  
+        }
     .aboutMeContChild button{ 
         width:150px;  
         margin-right: 100%;
+    }
+    .codeLangContChild:hover { /* Rotate Card Format */
+        transform: rotateY(180deg);
     }
 }
 
@@ -88,10 +100,16 @@ used on the Header and the first Section */
         width:210px;  
         margin: 0%
     }
+    .aboutMe{
+        margin-top:80px;  
+        }
     .contactContChild input{
         width:560px;
         height:22px;
         font-size: 18px;
+    }
+    .codeLangContChild:hover { /* Rotate Card Format */
+        transform: rotateY(180deg);
     }
     }
     
@@ -99,6 +117,9 @@ used on the Header and the first Section */
         header div {
             font-size: 9px;  
         }
+        .aboutMe{
+            margin-top:70px;  
+            }
         .contactContChild input{
             width:300px;
             height:22px;
@@ -108,16 +129,19 @@ used on the Header and the first Section */
         .contactContChild:nth-child(3) label{
             width:150px;
         }
+        .codeLangContChild:active { /* Rotate Card Format */
+            transform: rotateY(180deg);
+        }
     }
 
 
+    
 
 /* Main body: About Me */
 .aboutMe {
     background-color: var(--backgroundColorOne);
     text-align: center;
     padding: 25px 0;
-    margin-top:80px;
 }
 
 .aboutMeContainer {
@@ -220,25 +244,24 @@ used on the Header and the first Section */
 
 
 
- /* Mainbody: Coding Languages */
- .codingLanguages {
+/* Mainbody: Coding Languages */
+.codingLanguages {
     background-color: var(--backgroundColorOne);
     text-align: center;
     padding: 25px 0;
-    overflow: hidden;
+    
 }
 
 .codingLanguagesContainer {
     display: flex;
     margin: 40px auto 0 auto;
     flex-wrap: wrap;
-    
-    perspective: 1000px; /* CARD FORMAT */
+    perspective: 1000px; /* Rotate Card Format */
 }
 
 .codeLangContChild{
     flex:1;
-    position:relative; /*CARD FORMAT */
+    position:relative; /*Rotate Card Format */
     padding: 20px;
     margin-bottom: 20px;
     height: 300px;
@@ -246,20 +269,16 @@ used on the Header and the first Section */
     margin:50px;
     background: var(--languageCardBackground);
     
-    transition: transform 0.8s; /* CARD FORMAT */
-    transform-style: preserve-3d; /* CARD FORMAT */
-    position: relative; /* CARD FORMAT */
-}
-
-.codeLangContChild:active { /* CARD FORMAT */
-    transform: rotateY(180deg);
+    transition: transform 0.8s; /* Rotate Card Format */
+    transform-style: preserve-3d; /* Rotate Card Format */
+    position: relative; /* Rotate Card Format */
 }
 
 .codeLangContChild:hover{
     box-shadow: var(--hoverEffectShadow)
 }
 
-.flip-card-front, .flip-card-back { /* CARD FORMAT */
+.flip-card-front, .flip-card-back { /* Rotate Card Format */
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
@@ -270,7 +289,7 @@ used on the Header and the first Section */
     width: 180px
 }
 
-.flip-card-back { /*CARD FORMAT */
+.flip-card-back { /*Rotate Card Format */
     position:absolute; 
     background: var(--languageCardBackground);
     transform: rotateY(180deg);
@@ -292,7 +311,7 @@ used on the Header and the first Section */
 }
 
 .contactContainer {
-    padding: 20px 200px;
+    padding: 20px 100px;
     text-align: left;
   }
 
