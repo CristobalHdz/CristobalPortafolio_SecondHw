@@ -23,6 +23,11 @@ header {
     font-family: Arial, sans-serif;
     background-color:#3D4849 ;
     color: var(--generalFontColor);
+    /* Sets header to scroll with the page */
+    position:fixed; 
+    top:0;
+    width:100%;
+    z-index: 1;
 }
 
 header div {
@@ -56,7 +61,54 @@ h1{
 }
 
 
+/* Media is located here because it is only 
+used on the Header and the first Section */
+@media screen and (min-width: 1400px) {
+    header div {
+        font-size: 20px;  
+    }
+    .aboutMeContChild button{ 
+        width:150px;  
+        margin-right: 100%;
+    }
+}
 
+@media screen and (max-width: 1399px) {
+    header div {
+        font-size: 20px;  
+    }
+    .aboutMeContChild button{ 
+        width:150px;  
+        margin-right: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .aboutMeContChild button{ 
+        width:210px;  
+        margin: 0%
+    }
+    .contactContChild input{
+        width:560px;
+        height:22px;
+        font-size: 18px;
+    }
+    }
+    
+    @media screen and (max-width: 799px) {
+        header div {
+            font-size: 9px;  
+        }
+        .contactContChild input{
+            width:300px;
+            height:22px;
+            font-size: 18px;
+            margin:0 0 0 15px;
+        }
+        .contactContChild:nth-child(3) label{
+            width:150px;
+        }
+    }
 
 
 
@@ -65,6 +117,7 @@ h1{
     background-color: var(--backgroundColorOne);
     text-align: center;
     padding: 25px 0;
+    margin-top:80px;
 }
 
 .aboutMeContainer {
@@ -172,12 +225,14 @@ h1{
     background-color: var(--backgroundColorOne);
     text-align: center;
     padding: 25px 0;
+    overflow: hidden;
 }
 
 .codingLanguagesContainer {
     display: flex;
     margin: 40px auto 0 auto;
     flex-wrap: wrap;
+    
     perspective: 1000px; /* CARD FORMAT */
 }
 
@@ -190,6 +245,7 @@ h1{
     align-content: center;
     margin:50px;
     background: var(--languageCardBackground);
+    
     transition: transform 0.8s; /* CARD FORMAT */
     transform-style: preserve-3d; /* CARD FORMAT */
     position: relative; /* CARD FORMAT */
@@ -220,87 +276,55 @@ h1{
     transform: rotateY(180deg);
     top:0px;
     right:0px;
+    padding: 15px;
+    
+}
+
+.flip-card-back h2 {
+    text-align: center;
 }
 
 /* Contact Section */
-.contact{
+.contact {
+    padding-top: 15px;
     background-color: var(--backgroundColorTwo);
     text-align: center;
 }
 
-.contactContainer{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.contactContainer {
+    padding: 20px 200px;
+    text-align: left;
+  }
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    color:black;
 }
 
-.contactContChild{
-    flex:2;
-    margin: 30px 30px 0 0;
-}
-
-.contactContChild input, textarea{
-    background-color: var(--backgroundColorOne);
-    border-radius: 5px;
-}
-
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 
+/* These remove the arrows inside an input */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
 
-
-@media screen and (min-width: 1400px) {
-    header div {
-        font-size: 20px;  
-    }
-    .aboutMeContChild button{ 
-        width:150px;  
-        margin-right: 100%;
-    }
-    .contactContChild input{
-        width:560px;
-        height:22px;
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 1399px) {
-    header div {
-        font-size: 20px;  
-    }
-    .aboutMeContChild button{ 
-        width:150px;  
-        margin-right: 100%;
-    }
-    .contactContChild input{
-        width:560px;
-        height:22px;
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 960px) {
-.aboutMeContChild button{ 
-    width:200px;  
-    margin-right: 0%;
-}
-.contactContChild input{
-    width:560px;
-    height:22px;
-    font-size: 18px;
-}
-}
-
-@media screen and (max-width: 799px) {
-    header div {
-        font-size: 9px;  
-    }
-    .contactContChild input{
-        width:300px;
-        height:22px;
-        font-size: 18px;
-        margin:0 0 0 15px;
-    }
-    .contactContChild:nth-child(3) label{
-        width:150px;
-    }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
