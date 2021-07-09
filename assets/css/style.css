@@ -55,38 +55,7 @@ h1{
     color: var(--generalFontColor)
 }
 
-@media screen and (min-width: 1400px) {
-    header div {
-        font-size: 20px;  
-    }
-    .aboutMeContChild button{ 
-        width:150px;  
-        margin-right: 100%;
-    }
-}
 
-@media screen and (max-width: 1399px) {
-    header div {
-        font-size: 20px;  
-    }
-    .aboutMeContChild button{ 
-        width:150px;  
-        margin-right: 100%;
-    }
-}
-
-@media screen and (max-width: 960px) {
-.aboutMeContChild button{ 
-    width:200px;  
-    margin-right: 0%;
-}
-}
-
-@media screen and (max-width: 799px) {
-    header div {
-        font-size: 9px;  
-    }
-}
 
 
 
@@ -112,7 +81,6 @@ h1{
     align-content: center;
     margin:20px;
     text-align: center;
-    border:white 2px solid;
 }
 
 .aboutMeContChild img{   
@@ -254,3 +222,85 @@ h1{
     right:0px;
 }
 
+/* Contact Section */
+.contact{
+    background-color: var(--backgroundColorTwo);
+    text-align: center;
+}
+
+.contactContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactContChild{
+    flex:2;
+    margin: 30px 30px 0 0;
+}
+
+.contactContChild input, textarea{
+    background-color: var(--backgroundColorOne);
+    border-radius: 5px;
+}
+
+
+
+
+
+@media screen and (min-width: 1400px) {
+    header div {
+        font-size: 20px;  
+    }
+    .aboutMeContChild button{ 
+        width:150px;  
+        margin-right: 100%;
+    }
+    .contactContChild input{
+        width:560px;
+        height:22px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    header div {
+        font-size: 20px;  
+    }
+    .aboutMeContChild button{ 
+        width:150px;  
+        margin-right: 100%;
+    }
+    .contactContChild input{
+        width:560px;
+        height:22px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+.aboutMeContChild button{ 
+    width:200px;  
+    margin-right: 0%;
+}
+.contactContChild input{
+    width:560px;
+    height:22px;
+    font-size: 18px;
+}
+}
+
+@media screen and (max-width: 799px) {
+    header div {
+        font-size: 9px;  
+    }
+    .contactContChild input{
+        width:300px;
+        height:22px;
+        font-size: 18px;
+        margin:0 0 0 15px;
+    }
+    .contactContChild:nth-child(3) label{
+        width:150px;
+    }
+}
