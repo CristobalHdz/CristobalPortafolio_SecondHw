@@ -14,10 +14,6 @@ Second code Boot Camp assignment.
  ## Published link
  https://cristobalhdz.github.io/Portfolio_SecondHw/
 
- # Published link
-
- https://cristobalhdz.github.io/Portfolio_SecondHw/
-
 # Section 02: General Information
 
 The assignment for this week is to make a code developer portfolio within our experience.
