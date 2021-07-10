@@ -10,6 +10,9 @@ Second code Boot Camp assignment.
 </br>
 </br>
  by Cristobal Hernandez
+ 
+ ## Published link
+ https://cristobalhdz.github.io/Portfolio_SecondHw/
 
 # Section 02: General Information
 
